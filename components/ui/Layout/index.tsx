@@ -16,6 +16,7 @@ const Layout = ({ children, title = 'Varun Jindal' }: Props) => (
       <meta name="description" content="Product builder, engineer, dancer, foodie -- Varun Jindal" />
       <link rel="canonical" href="https://www.varunjindal.com" />
       <meta name="robots" content="index, follow" />
+      <link rel="icon" href="/logo.ico" />
 
       {/* Open Graph tags */}
       <meta property="og:type" content="website" />
@@ -31,6 +32,7 @@ const Layout = ({ children, title = 'Varun Jindal' }: Props) => (
       <meta name="twitter:image" content="/profile_pic.jpg" />
       <meta name="twitter:site" content="@varun_jindal8" />
       <meta name="twitter:creator" content="@varun_jindal8" />
+
     </Head>
     <div className={styles.container}>
       {children}
