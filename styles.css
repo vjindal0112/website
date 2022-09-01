@@ -1,9 +1,14 @@
+@font-face {
+    font-family: "RobotoFlex";
+    src: url("/fonts/RobotoFlex.ttf");
+}
+
 h1 {
     font-size: 40px;
 }
 
 h2 {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 li:not(:last-child) {
@@ -34,4 +39,18 @@ a {
 
 a:hover {
     background-size: 0 3px, 100% 3px;
+}
+
+* {
+    font-family: RobotoFlex;
+    font-variation-settings: 'wdth' 110, 'wght' 600;
+}
+
+p,
+li,
+ul,
+a,
+h2,
+h3 {
+    font-variation-settings: 'opsz' 20, 'wdth' 110, 'wght' 300;
 }
