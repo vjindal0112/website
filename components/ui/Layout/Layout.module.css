@@ -1,20 +1,19 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    margin: 40px auto;
-    max-width: 75%;
-    margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  max-width: 75%;
+  margin-bottom: 60px;
 }
 
 @media only screen and (min-width: 1025px) {
-    .container {
-        max-width: 60%;
-    }
+  .container {
+    max-width: 60%;
+  }
 }
 
-
 @media only screen and (max-width: 412px) {
-    .container {
-        max-width: 88%;
-    }
+  .container {
+    max-width: 88%;
+  }
 }

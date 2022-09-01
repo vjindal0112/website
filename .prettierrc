@@ -5,6 +5,6 @@
     "trailingComma": "es5",
     "singleQuote": false,
     "plugins": [
-        "./common/autoinstallers/rush-prettier/node_modules/prettier-plugin-organize-imports"
+        "./node_modules/prettier-plugin-organize-imports"
     ]
 }
