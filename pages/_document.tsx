@@ -6,7 +6,6 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <meta charSet="utf-8" />
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <meta name="description" content="Product builder, engineer, dancer, foodie — Varun Jindal" />
           <link rel="canonical" href="https://www.varunjindal.com" />
           <meta name="robots" content="index, follow" />

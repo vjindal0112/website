@@ -12,7 +12,8 @@ const Layout = ({ children, title = "Varun Jindal" }: Props) => (
     <Head>
       <title>{title}</title>
       <meta property="og:title" content={title} />
-      <meta name="twitter:title" content={title} />
+      <meta name="twitter:title" content={title} />{" "}
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <div className={styles.container}>{children}</div>
   </div>
