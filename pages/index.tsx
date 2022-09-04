@@ -22,7 +22,7 @@ const IndexPage = () => (
       <li>I like being active: running, soccer, etc.</li>
     </ul>
     <h2>Lessons</h2>
-    <p>Some thing I've learned</p>
+    <p>Some things I've learned</p>
     <ul>
       <li>You will never always feel incredible. Don’t over-optimize your life around feeling incredible, over-optimize your life to perform at your best no matter how you are feeling.</li>
       <li>There’s no limit to willpower; there’s no quota for the day.</li>
