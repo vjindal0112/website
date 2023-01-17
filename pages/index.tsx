@@ -12,7 +12,7 @@ const IndexPage = () => (
     <p>What I'm up to</p>
     <ul>
       <li>
-        Product and Eng @ <Link href="https://warp.dev">Warp</Link>
+        Product and Eng @ <Link href="https://lumos.com">Lumos</Link>
       </li>
       <li>Built products used by many:</li>
       <ul>
