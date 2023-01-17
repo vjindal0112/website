@@ -4,7 +4,7 @@ import ProfilePicture from "../components/ui/ProfilePicture";
 
 const IndexPage = () => (
   <Layout title="Varun Jindal">
-    <ProfilePicture link="https://www.linkedin.com/in/varun-jindal/" pictureUrl="profile_pic.jpg" />
+    <ProfilePicture link="https://www.linkedin.com/in/varun-jindal/" pictureUrl="pro-pic-casual-square.jpeg" />
     <h1 style={{ marginBottom: "8px" }}>Varun</h1>
     <p>Product builder, engineer, dancer, foodie</p>
     <br />
@@ -24,8 +24,10 @@ const IndexPage = () => (
         </li>
       </ul>
       <li>
-        Currently upskilling in code scalability and in... crypto???{" "}
-        <Link href="https://forms.gle/gXT5gMWN4nQmVigHA">Help me out</Link>
+        Currently upskilling in code scalability with{" "}
+        <Link href="https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321">
+          DDIA
+        </Link>
       </li>
       <li>Adventure and adrenaline excite me: roller coasters, skydiving, cliff jumping, etc.</li>
       <li>I like being active: running, soccer, etc.</li>
