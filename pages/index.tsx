@@ -65,7 +65,12 @@ const IndexPage = () => (
       </li>
       <li>
         <Link href="https://www.notion.so/varunjindal/a57d3289125c4ded9ab9fe7b0452d35c?v=b5c1b23a568c4cbb8f55451cc4398b5a">
-          Lessons from working at Collab AI
+          Learnings from working at Collab AI
+        </Link>
+      </li>
+      <li>
+        <Link href="https://varunjindal.notion.site/dd0c7f040e1d4b418e1e68e8f1ea1fe4?v=49c7d5e3f23f482fb6448a7c03c66ada">
+          Learnings from working at Warp
         </Link>
       </li>
       <li>
