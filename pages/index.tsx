@@ -17,7 +17,7 @@ const IndexPage = () => (
       <li>Built products used by many:</li>
       <ul>
         <li>
-          <Link href="https://try.studybuddies.ai">StudyBuddies</Link>
+          <Link href="https://studybuddies.varunjindal.com">StudyBuddies</Link>
         </li>
         <li>
           <Link href="https://enlight.nyc">Enlight</Link>
