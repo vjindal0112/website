@@ -6,15 +6,15 @@ const IndexPage = () => (
   <Layout title="Varun Jindal">
     <ProfilePicture link="https://www.linkedin.com/in/varun-jindal/" pictureUrl="pro-pic-casual-square.jpeg" />
     <h1 style={{ marginBottom: "8px" }}>Varun</h1>
-    <p>Product builder, engineer, dancer, foodie</p>
+    <p>Product builder, engineer, foodie</p>
     <br />
     <h2>About Me</h2>
     <p>What I'm up to</p>
     <ul>
       <li>
-        Product and Eng @ <Link href="https://lumos.com">Lumos</Link>
+        Eng @ <Link href="https://lumos.com">Lumos</Link>
       </li>
-      <li>Built products used by many:</li>
+      <li>Built products and communities with wide adoption:</li>
       <ul>
         <li>
           <Link href="https://studybuddies.varunjindal.com">StudyBuddies</Link>
@@ -22,12 +22,12 @@ const IndexPage = () => (
         <li>
           <Link href="https://enlight.nyc">Enlight</Link>
         </li>
+        <li>
+          <Link href="https://v1michigan.com/">V1 Michigan</Link>
+        </li>
       </ul>
       <li>
-        Currently upskilling in code scalability with{" "}
-        <Link href="https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321">
-          DDIA
-        </Link>
+        Currently upskilling in food traceability and food tech
       </li>
       <li>Adventure and adrenaline excite me: roller coasters, skydiving, cliff jumping, etc.</li>
       <li>I like being active: running, soccer, etc.</li>
@@ -79,7 +79,7 @@ const IndexPage = () => (
         </Link>
       </li>
       <li>
-        <Link href="https://youtu.be/Cd_nKLzmCuA">Kitty Cats in Greece</Link>
+        <Link href="https://youtu.be/Cd_nKLzmCuA">So many cats in Greece</Link>
       </li>
       <li>
         <Link href="https://youtu.be/jIC0aW7ZR9o">Living like a monk for 10 days</Link>
