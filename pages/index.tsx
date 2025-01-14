@@ -42,7 +42,7 @@ const IndexPage = () => (
       <li>There’s no limit to willpower; there’s no quota for the day.</li>
       <li>Show up for your friends, always.</li>
       <li>Everyone is still figuring stuff out. No one has their life together, no matter how successful they are. </li>
-      <li>Single-minded focus is incredibly powerful.</li>
+      <li>Single-minded focus is your superpower. Learn to harness it.</li>
       <li>Inspiration is fleeting, act on it immediately. </li>
       <li>
         The mismatch of how difficult you expect something to be and how hard it is in reality is the source of most
