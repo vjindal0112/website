@@ -5,8 +5,8 @@ import ProfilePicture from "../components/ui/ProfilePicture";
 const IndexPage = () => (
   <Layout title="Varun Jindal">
     <ProfilePicture link="https://www.linkedin.com/in/varun-jindal/" pictureUrl="pro-pic-casual-square.jpeg" />
-    <h1 style={{ marginBottom: "8px" }}>Varun</h1>
-    <p>Product builder, engineer, foodie</p>
+    <h1 style={{ marginBottom: "8px" }}>Varun Jindal</h1>
+    <p>Live like you mean it 🤘🏾</p>
     <br />
     <h2>About Me</h2>
     <p>What I'm up to</p>
