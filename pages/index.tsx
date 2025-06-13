@@ -12,8 +12,22 @@ const IndexPage = () => (
     <p>What I'm up to</p>
     <ul>
       <li>
-        Eng @ <Link href="https://lumos.com">Lumos</Link>
+        Building <Link href="https://short.shop">ShortShop</Link>
       </li>
+      <li>Adventure and adrenaline excite me: roller coasters, skydiving, cliff jumping, etc.</li>
+      <li>I like being active: running, dancing, soccer, etc.</li>
+      <li>Worked at cool companies:</li>
+      <ul>
+        <li>
+          <Link href="https://lumos.com">Lumos</Link>
+        </li>
+        <li>
+          <Link href="https://warp.dev">Warp</Link>
+        </li>
+        <li>
+          <Link href="https://relay.app">Relay</Link>
+        </li>
+      </ul>
       <li>Built products and communities with wide adoption:</li>
       <ul>
         <li>
@@ -26,11 +40,6 @@ const IndexPage = () => (
           <Link href="https://v1michigan.com/">V1 Michigan</Link>
         </li>
       </ul>
-      <li>
-        Currently upskilling in food traceability and food tech
-      </li>
-      <li>Adventure and adrenaline excite me: roller coasters, skydiving, cliff jumping, etc.</li>
-      <li>I like being active: running, soccer, etc.</li>
     </ul>
     <h2>Lessons</h2>
     <p>Some things I've learned</p>
@@ -45,8 +54,8 @@ const IndexPage = () => (
       <li>Single-minded focus is your superpower. Learn to harness it.</li>
       <li>Inspiration is fleeting, act on it immediately. </li>
       <li>
-        The mismatch of how difficult you expect something to be and how hard it is in reality is the source of most
-        of your anger and frustration.
+        The mismatch of how difficult you expect something to be and how hard it is in reality is the source of most of
+        your anger and frustration.
       </li>
       <li>Friendship, at its core, is mutual mentorship.</li>
       <li>
