@@ -44,8 +44,8 @@ image: "/images/writing/2026-goals.jpg"
 ### **4. Curate a Vibrant, Ambitious Friend Group**
 
 - I am very happy with my core group of friends, but I'd like to create a secondary circle where I have people who are either:
-    - more ambitious
-    - more spontaneous / more social
+    - more ambitious than me
+    - more spontaneous / more social than me
 - This is the direction in which I'd like to take my life and I would like to find more people to support me on that journey
 
 ### **5. Develop Technical Hardware Skills**
