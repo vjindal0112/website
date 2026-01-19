@@ -1,19 +1,150 @@
+/* ==============================================
+   Layout - Wabi-Sabi Asymmetric Design
+   ============================================== */
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--container-max);
+  width: 100%;
+  padding: var(--space-md) var(--container-pad) 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.logo {
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Remove default link underline for logo */
+  background: none !important;
+}
+
+.logo:hover {
+  transform: rotate(-3deg) scale(1.05);
+  background: none !important;
+}
+
+.nav {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+.navLink {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+
+/* Main container */
 .container {
   display: flex;
   flex-direction: column;
-  margin: 40px auto;
-  max-width: 75%;
-  margin-bottom: 60px;
+  margin: var(--space-md) auto var(--space-lg);
+  max-width: var(--container-max);
+  width: 100%;
+  padding: 0 var(--container-pad);
+  box-sizing: border-box;
+  flex: 1;
 }
 
-@media only screen and (min-width: 1025px) {
-  .container {
-    max-width: 60%;
+/* Asymmetric section offsets */
+.section {
+  margin-bottom: var(--space-md);
+}
+
+.section:nth-child(odd) {
+  padding-right: 5%;
+}
+
+.section:nth-child(even) {
+  padding-left: 5%;
+}
+
+/* Hero section - asymmetric layout */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space-md);
+  align-items: end;
+  margin-bottom: var(--space-sm);
+  padding-bottom: var(--space-xs);
+}
+
+.heroContent {
+  padding-bottom: var(--space-xs);
+}
+
+.heroImage {
+  justify-self: end;
+}
+
+/* Footer */
+.footer {
+  padding: var(--space-md) var(--container-pad);
+  text-align: center;
+}
+
+.footerDivider {
+  height: 1px;
+  max-width: var(--container-max);
+  margin: 0 auto var(--space-sm);
+  background: repeating-linear-gradient(
+    90deg,
+    var(--thread-light) 0 6px,
+    transparent 6px 14px
+  );
+  opacity: 0.4;
+}
+
+.footerText {
+  font-family: var(--font-accent);
+  font-size: 1.1rem;
+  color: var(--ink-ghost);
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    text-align: center;
+  }
+
+  .heroContent {
+    order: 2;
+    padding-bottom: 0;
+  }
+
+  .heroImage {
+    order: 1;
+    justify-self: center;
+  }
+
+  .section:nth-child(odd),
+  .section:nth-child(even) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 480px) {
+  .header {
+    padding: var(--space-sm) var(--space-sm) 0;
+  }
+
   .container {
-    max-width: 88%;
+    padding: 0 var(--space-sm);
+  }
+
+  .nav {
+    gap: var(--space-sm);
   }
 }

@@ -1,0 +1,139 @@
+/* ==============================================
+   Writing Pages - Wabi-Sabi Style
+   ============================================== */
+
+/* Post List */
+.postList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.postItem {
+  padding: var(--space-sm) 0;
+  border-bottom: 1px dashed var(--divider);
+}
+
+.postItem:last-child {
+  border-bottom: none;
+}
+
+/* Remove default list marker */
+.postItem::before {
+  display: none;
+}
+
+.postLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.postTitle {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--ink);
+}
+
+.postDate {
+  font-size: 0.9rem;
+  color: var(--ink-ghost);
+  white-space: nowrap;
+}
+
+.postDescription {
+  margin-top: var(--space-xs);
+  font-size: 0.95rem;
+  color: var(--ink-faded);
+  line-height: var(--leading-body);
+}
+
+/* Single Post Page */
+.article {
+  max-width: 680px;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: var(--ink-ghost);
+  margin-bottom: var(--space-sm);
+}
+
+.backLink::before {
+  content: '←';
+  font-family: var(--font-heading);
+}
+
+.articleHeader {
+  margin-bottom: var(--space-md);
+}
+
+.articleTitle {
+  margin-bottom: var(--space-xs);
+}
+
+.articleDate {
+  color: var(--ink-ghost);
+  font-style: italic;
+}
+
+.articleContent {
+  color: var(--ink-faded);
+}
+
+.articleContent h2 {
+  margin-top: var(--space-md);
+}
+
+.articleContent h3 {
+  margin-top: var(--space-sm);
+}
+
+.articleContent p {
+  margin-bottom: 10px;
+}
+
+.articleContent blockquote {
+  margin: var(--space-md) 0;
+  padding-left: var(--space-md);
+  border-left: 2px solid var(--thread-light);
+  color: var(--ink-ghost);
+  font-style: italic;
+}
+
+.articleContent code {
+  background: var(--paper-aged);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.articleContent pre {
+  background: var(--paper);
+  padding: var(--space-sm);
+  border-radius: 4px;
+  overflow-x: auto;
+  border-left: 3px solid var(--thread-light);
+}
+
+.articleContent pre code {
+  background: none;
+  padding: 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .postLink {
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+
+  .postDate {
+    font-size: 0.85rem;
+  }
+}

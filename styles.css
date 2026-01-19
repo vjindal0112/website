@@ -1,56 +1,308 @@
-@font-face {
-    font-family: "RobotoFlex";
-    src: url("/fonts/RobotoFlex.ttf");
+/* ==============================================
+   Wabi-Sabi Design System
+   Imperfect, asymmetric, organic, calm
+   ============================================== */
+
+/* -----------------------------
+   Color Tokens
+------------------------------ */
+:root {
+  /* Base - aged paper and natural materials */
+  --bg-warm: #f5efe6;
+  --bg-cool: #f0ebe2;
+  --paper: #faf6ef;
+  --paper-aged: #e8e0d4;
+
+  /* Ink - sumi ink variations */
+  --ink-deep: #1a1816;
+  --ink: #2d2926;
+  --ink-faded: #4a4541;
+  --ink-ghost: #6b635b;
+
+  /* Natural dye accents */
+  --thread: #8b7355;
+  --thread-light: rgba(139, 115, 85, 0.4);
+  --moss: #6b7c5e;
+  --rust: #8b5a3c;
+  --indigo: #3d4f5f;
+
+  /* Functional */
+  --muted: rgba(45, 41, 38, 0.65);
+  --divider: rgba(45, 41, 38, 0.12);
+  --shadow: rgba(26, 24, 22, 0.08);
+
+  /* Typography */
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Source Serif 4', Georgia, serif;
+  --font-accent: 'Caveat', cursive;
+
+  /* Line height (tight reading rhythm) */
+  --leading-body: 1.4;
+  --leading-heading: 1.15;
+
+  /* Spacing (compact but breathable) */
+  --space-xs: 6px;
+  --space-sm: 12px;
+  --space-md: 20px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+
+  /* Layout */
+  --container-max: 780px;
+  --container-pad: 24px;
+}
+
+/* -----------------------------
+   Base Reset & Background
+------------------------------ */
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: var(--leading-body);
+  font-weight: 350;
+  background-color: var(--bg-warm);
+
+  /* Layered paper texture */
+  background-image:
+    /* Soft light from top-left */
+    radial-gradient(
+      ellipse 120% 80% at 10% -20%,
+      rgba(255, 255, 255, 0.7) 0%,
+      transparent 50%
+    ),
+    /* Subtle warm glow bottom-right */
+    radial-gradient(
+      ellipse 80% 60% at 95% 105%,
+      rgba(139, 115, 85, 0.04) 0%,
+      transparent 40%
+    ),
+    /* Fine horizontal grain */
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 4px,
+      rgba(45, 41, 38, 0.008) 4px,
+      rgba(45, 41, 38, 0.008) 5px
+    ),
+    /* Fine vertical grain */
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 5px,
+      rgba(45, 41, 38, 0.006) 5px,
+      rgba(45, 41, 38, 0.006) 6px
+    ),
+    /* Organic color variation - moss hint */
+    radial-gradient(
+      circle at 25% 35%,
+      rgba(107, 124, 94, 0.025) 0%,
+      transparent 35%
+    ),
+    /* Organic color variation - warm hint */
+    radial-gradient(
+      circle at 75% 65%,
+      rgba(139, 115, 85, 0.02) 0%,
+      transparent 30%
+    );
+  background-attachment: fixed;
+}
+
+/* Slightly more breathing room on small screens for readability */
+@media (max-width: 600px) {
+  :root {
+    --leading-body: 1.45;
+  }
+}
+
+/* -----------------------------
+   Typography
+------------------------------ */
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0;
 }
 
 h1 {
-    font-size: 40px;
+  font-size: 2.75rem;
+  font-weight: 300;
+  line-height: var(--leading-heading);
+  margin-bottom: var(--space-xs);
 }
 
 h2 {
-    font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-xs);
+  position: relative;
+  display: inline-block;
 }
 
-li:not(:last-child) {
-    margin-bottom: 4px;
+/* Heading underline animation on hover */
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--thread);
+  transition: width 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+h2:hover::after {
+  width: 100%;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
 p {
-    margin: 0;
+  margin: 0 0 10px 0;
+  color: var(--ink-faded);
 }
 
+/* -----------------------------
+   Links - Stitched Underline
+------------------------------ */
 a {
-    font-weight: normal;
-    color: black;
-    text-decoration-line: none;
-    background:
-        linear-gradient(to right,
-            #6eb5ff,
-            #6eb5ff),
-        linear-gradient(to right,
-            rgba(255, 0, 0, 1),
-            rgba(255, 0, 180, 1),
-            rgba(0, 100, 200, 1));
-    background-size: 100% 3px, 0 3px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms;
+  color: var(--ink);
+  text-decoration: none;
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--thread-light) 0 5px,
+    transparent 5px 10px
+  );
+  background-size: 10px 1.5px;
+  background-position: 0 calc(100% - 1px);
+  background-repeat: repeat-x;
+  transition:
+    background-position 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 200ms ease;
 }
 
 a:hover {
-    background-size: 0 3px, 100% 3px;
+  background-position: 5px calc(100% - 1px);
+  color: var(--ink-deep);
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--thread) 0 5px,
+    transparent 5px 10px
+  );
 }
 
-* {
-    font-family: RobotoFlex;
-    font-variation-settings: 'wdth' 110, 'wght' 600;
+a:focus-visible {
+  outline: 2px solid var(--thread-light);
+  outline-offset: 4px;
+  border-radius: 2px;
 }
 
-p,
-li,
-ul,
-a,
-h2,
-h3 {
-    font-variation-settings: 'opsz' 20, 'wdth' 110, 'wght' 300;
+/* -----------------------------
+   Lists
+------------------------------ */
+ul {
+  padding-left: 0;
+  margin: 0 0 var(--space-sm) 0;
+  list-style: none;
+}
+
+li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 4px;
+  color: var(--ink-faded);
+}
+
+li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--thread);
+  font-family: var(--font-heading);
+}
+
+/* Nested lists */
+ul ul {
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-sm);
+  margin-left: var(--space-sm);
+}
+
+/* -----------------------------
+   Utility Classes
+------------------------------ */
+.text-muted {
+  color: var(--ink-ghost);
+}
+
+.text-accent {
+  font-family: var(--font-accent);
+}
+
+/* Stitched divider */
+.stitch-divider {
+  height: 1px;
+  margin: var(--space-xs) 0;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--thread-light) 0 6px,
+    transparent 6px 14px
+  );
+  opacity: 0.6;
+}
+
+/* Offset divider for asymmetry */
+.stitch-divider--offset-left {
+  width: 65%;
+  margin-right: auto;
+}
+
+.stitch-divider--offset-right {
+  width: 65%;
+  margin-left: auto;
+}
+
+/* Section card treatment */
+.section-card {
+  background: var(--paper);
+  padding: var(--space-sm) var(--space-sm) var(--space-sm) calc(var(--space-sm) + 3px);
+  margin: var(--space-sm) 0;
+  border-left: 3px solid var(--thread-light);
+  box-shadow:
+    6px 6px 0 var(--paper-aged),
+    2px 4px 16px var(--shadow);
+  border-radius: 1px 6px 4px 1px;
+}
+
+/* Lessons list */
+.lessons-list li {
+  padding: 3px 0 3px 20px;
+}
+
+/* Tagline styling */
+.tagline {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--ink-ghost);
+  font-style: italic;
+  margin: 0;
+}
+
+/* Section subtitle */
+.section-subtitle {
+  font-size: 0.95rem;
+  color: var(--ink-ghost);
+  margin-bottom: var(--space-sm);
 }

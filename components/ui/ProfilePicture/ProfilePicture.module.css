@@ -1,19 +1,108 @@
-.picture {
-    display: flex;
-    border-radius: 50%;
-    flex-grow: 0;
-    flex-shrink: 0;
-    width: 200px;
-    height: 200px;
-}
-
-
-@media only screen and (max-width: 600px) {
-    .container {
-        justify-content: center;
-    }
-}
+/* ==============================================
+   Profile Picture - Hand-Drawn Frame
+   ============================================== */
 
 .container {
-    display: flex;
+  display: flex;
+  position: relative;
+}
+
+.pictureWrapper {
+  position: relative;
+  display: block;
+  /* Remove link underline effect */
+  background: none !important;
+}
+
+.pictureWrapper:hover {
+  background: none !important;
+}
+
+.picture {
+  display: block;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pictureWrapper:hover .picture {
+  transform: rotate(2deg) scale(1.02);
+}
+
+/* Hand-drawn imperfect circle frame */
+.frame {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 2px solid var(--thread-light);
+  /* Imperfect circle using varying border-radius */
+  border-radius: 47% 53% 52% 48% / 52% 47% 53% 48%;
+  opacity: 0.7;
+  pointer-events: none;
+  animation: subtle-breathe 10s ease-in-out infinite;
+}
+
+/* Second frame for layered effect */
+.frameOuter {
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  right: -18px;
+  bottom: -18px;
+  border: 1px dashed var(--thread-light);
+  border-radius: 52% 48% 47% 53% / 48% 52% 48% 52%;
+  opacity: 0.4;
+  pointer-events: none;
+  animation: subtle-breathe-reverse 12s ease-in-out infinite;
+}
+
+@keyframes subtle-breathe {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.015) rotate(1deg);
+  }
+}
+
+@keyframes subtle-breathe-reverse {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(0.99) rotate(-0.5deg);
+  }
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .picture {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .picture {
+    width: 140px;
+    height: 140px;
+  }
+
+  .frame {
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+  }
+
+  .frameOuter {
+    top: -14px;
+    left: -14px;
+    right: -14px;
+    bottom: -14px;
+  }
 }
