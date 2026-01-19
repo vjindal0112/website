@@ -19,7 +19,7 @@ image: "/images/writing/2026-goals.jpg"
 
 ### **3. Get Into Peak Physical Shape**
 
-- A healthy body supports a strong company and a vibrant relationship.
+- Feeling strong and flexible helps me easily sit for long days and keeps me feeling good. Aim is for stable at ~160 lbs (currently at 154ish). 
 
 ### **4. Be an Amazing Partner**
 
