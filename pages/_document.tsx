@@ -8,7 +8,7 @@ class MyDocument extends Document {
           <meta charSet="utf-8" />
           <meta
             name="description"
-            content="Product builder, engineer, dancer, foodie — Varun Jindal"
+            content="Probably at his desk — Varun Jindal"
           />
           <link rel="canonical" href="https://www.varunjindal.com" />
           <meta name="robots" content="index, follow" />
@@ -26,7 +26,7 @@ class MyDocument extends Document {
           <meta property="og:type" content="website" />
           <meta
             property="og:description"
-            content="Product builder, engineer, dancer, foodie — Varun Jindal"
+            content="Probably at his desk — Varun Jindal"
           />
           <meta property="og:image" content="/profile_pic.jpg" />
           <meta property="og:url" content="https://www.varunjindal.com" />
@@ -35,7 +35,7 @@ class MyDocument extends Document {
           {/* Twitter Tags */}
           <meta
             name="twitter:description"
-            content="Product builder, engineer, dancer, foodie — Varun Jindal"
+            content="Probably at his desk — Varun Jindal"
           />
           <meta name="twitter:image" content="/profile_pic.jpg" />
           <meta name="twitter:site" content="@varun_jindal8" />

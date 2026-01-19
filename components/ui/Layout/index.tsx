@@ -21,7 +21,7 @@ const DEFAULT_IMAGE = `${SITE_URL}/logo.png`;
 const Layout = ({
   children,
   title = "Varun Jindal",
-  description = "Product builder, engineer, dancer, foodie — Varun Jindal",
+  description = "Probably at his desk — Varun Jindal",
   image,
   url,
   type = "website",
