@@ -12,10 +12,7 @@ const IndexPage = () => (
         <p className="tagline">Live like you mean it 🤘🏾</p>
       </div>
       <div className={styles.heroImage}>
-        <ProfilePicture
-          link="https://www.linkedin.com/in/varun-jindal/"
-          pictureUrl="pro-pic-casual-square.jpeg"
-        />
+        <ProfilePicture link="https://www.linkedin.com/in/varun-jindal/" pictureUrl="pro-pic-casual-square.jpeg" />
       </div>
     </div>
 
@@ -24,9 +21,7 @@ const IndexPage = () => (
       <h2>About Me</h2>
       <p className="section-subtitle">What I'm up to</p>
       <ul>
-        <li>
-          Building <Link href="https://short.shop">ShortShop</Link>
-        </li>
+        <li>Building in consumer</li>
         <li>Adventure and adrenaline excite me: roller coasters, skydiving, cliff jumping</li>
         <li>I like being active: running, dancing, soccer</li>
         <li>
@@ -69,25 +64,24 @@ const IndexPage = () => (
       <p className="section-subtitle">Some things I've learned</p>
       <ul className="lessons-list">
         <li>
-          You will never always feel incredible. Don't over-optimize your life around feeling
-          incredible, over-optimize your life to perform at your best no matter how you are feeling.
+          You will never always feel incredible. Don't over-optimize your life around feeling incredible, over-optimize
+          your life to perform at your best no matter how you are feeling.
         </li>
         <li>There's no limit to willpower; there's no quota for the day.</li>
         <li>Show up for your friends, always.</li>
         <li>
-          Everyone is still figuring stuff out. No one has their life together, no matter how
-          successful they are.
+          Everyone is still figuring stuff out. No one has their life together, no matter how successful they are.
         </li>
         <li>Single-minded focus is your superpower. Learn to harness it.</li>
         <li>Inspiration is fleeting, act on it immediately.</li>
         <li>
-          The mismatch of how difficult you expect something to be and how hard it is in reality is
-          the source of most of your anger and frustration.
+          The mismatch of how difficult you expect something to be and how hard it is in reality is the source of most
+          of your anger and frustration.
         </li>
         <li>Friendship, at its core, is mutual mentorship.</li>
         <li>
-          Always assume people are acting in good faith. Even if they aren't, your perception and
-          reaction will be more true to yourself.
+          Always assume people are acting in good faith. Even if they aren't, your perception and reaction will be more
+          true to yourself.
         </li>
       </ul>
     </section>
