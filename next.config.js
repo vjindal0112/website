@@ -4,11 +4,11 @@ const nextConfig = {
     return [
       {
         source: "/_a/s.js",
-        destination: "/_vercel/insights/script.js",
+        destination: "https://www.varunjindal.com/_vercel/insights/script.js",
       },
       {
-        source: "/_a/i",
-        destination: "/_vercel/insights",
+        source: "/_a/i/:path*",
+        destination: "https://www.varunjindal.com/_vercel/insights/:path*",
       },
     ];
   },
