@@ -24,6 +24,7 @@ This is the running list.
 
 - Decided to stop pursuing soccer and instead began to pursue drums more seriously
 - Made it into the pre-college jazz ensemble for Stony Brook University as one of two drummers
+- Learned robotics and joined a robotics team
 
 ### 2019
 
