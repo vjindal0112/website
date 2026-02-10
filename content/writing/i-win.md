@@ -14,6 +14,7 @@ This is the running list.
 ### 2016
 
 - Won 4th in the U.S. at "Elastic Launched Glider" where I built a wooden glider that had the longest air time
+- Joined a robotics team and learned about robotics
 
 ### 2017
 
@@ -25,7 +26,7 @@ This is the running list.
 
 - Decided to stop pursuing soccer and instead began to pursue drums more seriously
 - Made it into the pre-college jazz ensemble for Stony Brook University as one of two drummers
-- Learned robotics and joined a robotics team
+- Made it to the World Championship in St. Louis with our robotics team
 
 ### 2019
 
