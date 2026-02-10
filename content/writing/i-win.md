@@ -52,7 +52,7 @@ This is the running list.
 
 ### 2022
 
-- Led the team at V1 to create the largest startup career fair in the nation and got 10+ people real jobs
+- Led the team at V1 to create the largest startup career fair in the nation
 - Learned to snowboard
 - Launched a newsletter feedback software and got our first paying user
 - Backpacked up a mountain in the Himalayas (12500+ feet)
