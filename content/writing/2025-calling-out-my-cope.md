@@ -3,6 +3,7 @@ title: "2025: Calling out my Cope"
 date: "2026-01-12"
 description: "How I stopped hiding behind ambition and started confronting the gap between who I said I was and what I actually did."
 image: "/images/writing/2025-calling-out-my-cope.png"
+hidden: true
 ---
 
 This was the year I began to call out my cope. For years I've been hiding. I worked at a "fast-growing company," I was in the "ambitious circles," there were people telling me I was crushing it, but deep down I knew that I wasn't doing the things I needed to in order to reach my goal of building a company.

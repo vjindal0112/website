@@ -10,6 +10,7 @@ export type WritingFrontmatter = {
   date: string;
   description: string;
   image?: string;
+  hidden?: boolean;
 };
 
 export type WritingPostListItem = WritingFrontmatter & {
@@ -35,31 +36,45 @@ function getMarkdownFilenames(): string[] {
     .filter((file) => file.toLowerCase().endsWith(".md"));
 }
 
+function parseHiddenFlag(value: unknown): boolean {
+  if (typeof value === "boolean") return value;
+  if (typeof value === "string") {
+    const normalized = value.trim().toLowerCase();
+    return normalized === "true" || normalized === "1" || normalized === "yes";
+  }
+  return false;
+}
+
+function getPostMetadata(slug: string): WritingPostListItem & { hidden: boolean } {
+  const fullPath = path.join(CONTENT_DIR, `${slug}.md`);
+  const fileContents = fs.readFileSync(fullPath, "utf8");
+  const { data } = matter(fileContents);
+
+  const title = String(data.title ?? "").trim();
+  const date = String(data.date ?? "").trim();
+  const description = String(data.description ?? "").trim();
+  const image = data.image ? String(data.image).trim() : undefined;
+  const hidden = parseHiddenFlag(data.hidden);
+
+  if (!title || !date || !description) {
+    throw new Error(
+      `Missing required frontmatter in ${slug}.md (need title, date, description)`
+    );
+  }
+
+  return { slug, title, date, description, image, hidden };
+}
+
 export function getAllWritingSlugs(): string[] {
-  return getMarkdownFilenames().map((file) => file.replace(/\.md$/i, ""));
+  return getMarkdownFilenames()
+    .map((file) => file.replace(/\.md$/i, ""))
+    .filter((slug) => !getPostMetadata(slug).hidden);
 }
 
 export function getAllWritingPosts(): WritingPostListItem[] {
   const slugs = getAllWritingSlugs();
 
-  const posts = slugs.map((slug) => {
-    const fullPath = path.join(CONTENT_DIR, `${slug}.md`);
-    const fileContents = fs.readFileSync(fullPath, "utf8");
-    const { data } = matter(fileContents);
-
-    const title = String(data.title ?? "").trim();
-    const date = String(data.date ?? "").trim();
-    const description = String(data.description ?? "").trim();
-    const image = data.image ? String(data.image).trim() : undefined;
-
-    if (!title || !date || !description) {
-      throw new Error(
-        `Missing required frontmatter in ${slug}.md (need title, date, description)`
-      );
-    }
-
-    return { slug, title, date, description, image };
-  });
+  const posts = slugs.map((slug) => getPostMetadata(slug));
 
   posts.sort((a, b) => {
     const aTime = Date.parse(a.date);
@@ -84,11 +99,15 @@ export async function getWritingPostBySlug(slug: string): Promise<WritingPost> {
   const date = String(data.date ?? "").trim();
   const description = String(data.description ?? "").trim();
   const image = data.image ? String(data.image).trim() : undefined;
+  const hidden = parseHiddenFlag(data.hidden);
 
   if (!title || !date || !description) {
     throw new Error(
       `Missing required frontmatter in ${slug}.md (need title, date, description)`
     );
+  }
+  if (hidden) {
+    throw new Error(`Missing post: ${slug}`);
   }
 
   const processedContent = await remark().use(html).process(content);
