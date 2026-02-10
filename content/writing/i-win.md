@@ -10,6 +10,7 @@ This is the running list.
 ### 2015
 
 - Joined Science Olympiad (SciOly)
+- Became my travel soccer team's captain
 
 ### 2016
 
