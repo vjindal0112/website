@@ -19,7 +19,7 @@ This is the running list.
 
 ### 2017
 
-- Became Science Olympiad Team Captain
+- Became JHS Science Olympiad Team Captain
 - Won 2nd in the U.S. at "Food Science" where we took a test and did a lab on the physics of dairy and cheese
 - Led team to a 10th place finish in the U.S.
 
