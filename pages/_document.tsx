@@ -22,22 +22,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
 
-          {/* Open Graph tags */}
-          <meta property="og:type" content="website" />
-          <meta
-            property="og:description"
-            content="Probably at his desk — Varun Jindal"
-          />
-          <meta property="og:image" content="/profile_pic.jpg" />
-          <meta property="og:url" content="https://www.varunjindal.com" />
-          <meta property="og:site_name" content="Varun Jindal" />
-
-          {/* Twitter Tags */}
-          <meta
-            name="twitter:description"
-            content="Probably at his desk — Varun Jindal"
-          />
-          <meta name="twitter:image" content="/profile_pic.jpg" />
+          {/* Twitter Tags (site-wide, not page-specific) */}
           <meta name="twitter:site" content="@varun_jindal8" />
           <meta name="twitter:creator" content="@varun_jindal8" />
         </Head>

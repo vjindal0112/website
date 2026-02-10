@@ -31,7 +31,7 @@ This is the running list.
 ### 2019
 
 - Become SciOly Team Captain for our high school team
-- Led our team to the National Tournament
+- Led our team to the National Tournament after not making it the previous year
 - Won 5th in the U.S. at "Sounds of Music" where I built an instrument and took a test on the physics of music
 - Could briefly do a back handspring
 
