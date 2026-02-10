@@ -2,6 +2,7 @@
 title: "I win"
 date: "2026-02-10"
 description: "A list of wins."
+image: "/images/writing/i_win.JPG"
 ---
 
 This is the running list.

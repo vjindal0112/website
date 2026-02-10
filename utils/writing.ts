@@ -62,7 +62,14 @@ function getPostMetadata(slug: string): WritingPostListItem & { hidden: boolean 
     );
   }
 
-  return { slug, title, date, description, image, hidden };
+  return {
+    slug,
+    title,
+    date,
+    description,
+    hidden,
+    ...(image ? { image } : {}),
+  };
 }
 
 export function getAllWritingSlugs(): string[] {
@@ -113,6 +120,13 @@ export async function getWritingPostBySlug(slug: string): Promise<WritingPost> {
   const processedContent = await remark().use(html).process(content);
   const contentHtml = processedContent.toString();
 
-  return { slug, title, date, description, image, contentHtml };
+  return {
+    slug,
+    title,
+    date,
+    description,
+    contentHtml,
+    ...(image ? { image } : {}),
+  };
 }
 
