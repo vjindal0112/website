@@ -21,7 +21,7 @@ const IndexPage = () => (
       <h2>About Me</h2>
       <p className="section-subtitle">What I'm up to</p>
       <ul>
-        <li>Building in consumer</li>
+        <li>Building in architecture</li>
         <li>Adventure and adrenaline excite me: roller coasters, skydiving, cliff jumping</li>
         <li>I like being active: running, dancing, soccer</li>
         <li>
