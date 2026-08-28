@@ -26,7 +26,6 @@ const IndexPage = () => (
     {/* Lessons Section */}
     <section className={styles.section}>
       <h2>Lessons</h2>
-      <p className="section-subtitle">Some things I've learned</p>
       <ul className="lessons-list">
         <li>
           You will never always feel incredible. Don't over-optimize your life around feeling incredible, over-optimize
@@ -57,7 +56,6 @@ const IndexPage = () => (
     {/* Links Section */}
     <section className={styles.section}>
       <h2>Links</h2>
-      <p className="section-subtitle">Explorations and artifacts</p>
       <ul>
         <li>
           <Link href="https://www.youtube.com/watch?v=603F7vPUbrg">CD Wind Turbines</Link>
