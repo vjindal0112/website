@@ -16,7 +16,7 @@ const IndexPage = () => (
       <h2>About Me</h2>
       <p>I'm currently building for the physical world.</p>
       <p>
-        In the past, I've enjoyed working on robotics, woodworking, materials science research, and consumer apps.
+        In the past, I've enjoyed working on materials science research, robotics, woodworking, and consumer apps.
       </p>
     </section>
 
