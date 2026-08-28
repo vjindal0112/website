@@ -13,6 +13,7 @@ type Props = {
   type?: "website" | "article";
   publishedTime?: string;
   author?: string;
+  hideWritingLink?: boolean;
 };
 
 const SITE_URL = "https://varunjindal.com";
@@ -27,6 +28,7 @@ const Layout = ({
   type = "website",
   publishedTime,
   author = "Varun Jindal",
+  hideWritingLink = false,
 }: Props) => {
   const fullImageUrl = image
     ? image.startsWith("http")
@@ -68,11 +70,13 @@ const Layout = ({
         <Link href="/" aria-label="Home" className={styles.logo}>
           <Image src="/logo.png" alt="VJ" width={44} height={44} />
         </Link>
-        <nav className={styles.nav} aria-label="Primary">
-          <Link href="/writing" className={styles.navLink}>
-            Writing
-          </Link>
-        </nav>
+        {!hideWritingLink && (
+          <nav className={styles.nav} aria-label="Primary">
+            <Link href="/writing" className={styles.navLink}>
+              Writing
+            </Link>
+          </nav>
+        )}
       </header>
 
       <main className={styles.container}>{children}</main>
