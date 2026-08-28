@@ -81,6 +81,29 @@ const IndexPage = () => (
         </li>
       </ul>
     </section>
+
+    {/* Divider */}
+    <div className="stitch-divider stitch-divider--offset-left" />
+
+    {/* Links Section */}
+    <section className={styles.section}>
+      <h2>Links</h2>
+      <p className="section-subtitle">Explorations and artifacts</p>
+      <ul>
+        <li>
+          <Link href="https://www.youtube.com/watch?v=603F7vPUbrg">CD Wind Turbines</Link>
+        </li>
+        <li>
+          <Link href="https://www.youtube.com/watch?v=gmHcG-bar7w">Robotic Arm</Link>
+        </li>
+        <li>
+          <Link href="https://www.youtube.com/watch?v=nn-x44gB0oA">Wooden Helicopters</Link>
+        </li>
+        <li>
+          <Link href="https://www.youtube.com/watch?v=fUokpuev6pk">&ldquo;Soft&rdquo; Robotics</Link>
+        </li>
+      </ul>
+    </section>
   </Layout>
 );
 
