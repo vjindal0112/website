@@ -1,18 +1,14 @@
 import Link from "next/link";
 import Layout from "../components/ui/Layout";
-import ProfilePicture from "../components/ui/ProfilePicture";
 import styles from "../components/ui/Layout/Layout.module.css";
 
 const IndexPage = () => (
   <Layout title="Varun Jindal">
-    {/* Hero - Asymmetric layout */}
+    {/* Hero */}
     <div className={styles.hero}>
       <div className={styles.heroContent}>
         <h1>Varun Jindal</h1>
         <p className="tagline">Live like you mean it 🤘🏾</p>
-      </div>
-      <div className={styles.heroImage}>
-        <ProfilePicture link="https://www.linkedin.com/in/varun-jindal/" pictureUrl="pro-pic-casual-square.jpeg" />
       </div>
     </div>
 
@@ -95,31 +91,16 @@ const IndexPage = () => (
       <p className="section-subtitle">Explorations and artifacts</p>
       <ul>
         <li>
-          <Link href="https://projects.varunjindal.com">Wall of projects</Link>
+          <Link href="https://www.youtube.com/watch?v=603F7vPUbrg">CD Wind Turbines</Link>
         </li>
         <li>
-          <Link href="https://lessons.varunjindal.com">Full list of lessons</Link>
+          <Link href="https://www.youtube.com/watch?v=gmHcG-bar7w">Robotic Arm</Link>
         </li>
         <li>
-          <Link href="https://www.notion.so/varunjindal/a57d3289125c4ded9ab9fe7b0452d35c?v=b5c1b23a568c4cbb8f55451cc4398b5a">
-            Learnings from working at Collab AI
-          </Link>
+          <Link href="https://www.youtube.com/watch?v=nn-x44gB0oA">Wooden Helicopters</Link>
         </li>
         <li>
-          <Link href="https://varunjindal.notion.site/dd0c7f040e1d4b418e1e68e8f1ea1fe4?v=49c7d5e3f23f482fb6448a7c03c66ada">
-            Learnings from working at Warp
-          </Link>
-        </li>
-        <li>
-          <Link href="https://www.michigandaily.com/campus-life/student-run-studybuddies-site-helps-students-connect-virtual-classes/">
-            StudyBuddies in the Michigan Daily
-          </Link>
-        </li>
-        <li>
-          <Link href="https://youtu.be/Cd_nKLzmCuA">So many cats in Greece</Link>
-        </li>
-        <li>
-          <Link href="https://youtu.be/jIC0aW7ZR9o">Living like a monk for 10 days</Link>
+          <Link href="https://www.youtube.com/watch?v=fUokpuev6pk">&ldquo;Soft&rdquo; Robotics</Link>
         </li>
       </ul>
     </section>
