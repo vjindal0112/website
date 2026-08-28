@@ -3,7 +3,7 @@ import Layout from "../components/ui/Layout";
 import styles from "../components/ui/Layout/Layout.module.css";
 
 const IndexPage = () => (
-  <Layout title="Varun Jindal">
+  <Layout title="Varun Jindal" hideWritingLink>
     {/* Hero */}
     <div className={styles.hero}>
       <div className={styles.heroContent}>
