@@ -8,7 +8,6 @@ const IndexPage = () => (
     <div className={styles.hero}>
       <div className={styles.heroContent}>
         <h1>Varun Jindal</h1>
-        <p className="tagline">Live like you mean it 🤘🏾</p>
       </div>
     </div>
 
