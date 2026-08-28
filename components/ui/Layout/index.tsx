@@ -68,11 +68,13 @@ const Layout = ({
         <Link href="/" aria-label="Home" className={styles.logo}>
           <Image src="/logo.png" alt="VJ" width={44} height={44} />
         </Link>
+        {/* Writing section hidden for now
         <nav className={styles.nav} aria-label="Primary">
           <Link href="/writing" className={styles.navLink}>
             Writing
           </Link>
         </nav>
+        */}
       </header>
 
       <main className={styles.container}>{children}</main>
