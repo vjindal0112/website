@@ -27,15 +27,15 @@ const IndexPage = () => (
     <section className={styles.section}>
       <h2>Lessons</h2>
       <ul className="lessons-list">
+        <li>
+          Always assume people are acting in good faith. Even if they aren't, your perception and reaction will be more
+          true to yourself.
+        </li>
         <li>There's no limit to willpower; there's no quota for the day.</li>
         <li>Show up for your friends, always.</li>
         <li>Single-minded focus is your superpower. Learn to harness it.</li>
         <li>Inspiration is fleeting, act on it immediately.</li>
         <li>Friendship, at its core, is mutual mentorship.</li>
-        <li>
-          Always assume people are acting in good faith. Even if they aren't, your perception and reaction will be more
-          true to yourself.
-        </li>
       </ul>
     </section>
 
