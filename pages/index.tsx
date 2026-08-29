@@ -65,6 +65,9 @@ const IndexPage = () => (
         <li>
           <Link href="https://www.youtube.com/watch?v=mRDLlziWg-0">Maybe the best duet ever</Link>
         </li>
+        <li>
+          <Link href="https://www.youtube.com/watch?v=EZp61YacOuI">One of my favorite dance videos</Link>
+        </li>
       </ul>
     </section>
   </Layout>
