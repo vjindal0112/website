@@ -62,6 +62,9 @@ const IndexPage = () => (
         <li>
           <Link href="https://media-to-share.s3.us-east-2.amazonaws.com/i_win.mp4">Dubs only</Link>
         </li>
+        <li>
+          <Link href="https://www.youtube.com/watch?v=mRDLlziWg-0">Maybe the best duet ever</Link>
+        </li>
       </ul>
     </section>
   </Layout>
