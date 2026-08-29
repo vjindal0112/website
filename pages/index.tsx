@@ -35,7 +35,6 @@ const IndexPage = () => (
         <li>Show up for your friends, always.</li>
         <li>Single-minded focus is your superpower. Learn to harness it.</li>
         <li>Inspiration is fleeting, act on it immediately.</li>
-        <li>Friendship, at its core, is mutual mentorship.</li>
         <li>Aim to become known as a person who lifts others around them.</li>
       </ul>
     </section>
