@@ -36,6 +36,7 @@ const IndexPage = () => (
         <li>Single-minded focus is your superpower. Learn to harness it.</li>
         <li>Inspiration is fleeting, act on it immediately.</li>
         <li>Friendship, at its core, is mutual mentorship.</li>
+        <li>Aim to become known as a person who lifts others around them.</li>
       </ul>
     </section>
 
@@ -57,6 +58,15 @@ const IndexPage = () => (
         </li>
         <li>
           <Link href="https://www.youtube.com/watch?v=fUokpuev6pk">&ldquo;Soft&rdquo; Robotics</Link>
+        </li>
+        <li>
+          <Link href="https://media-to-share.s3.us-east-2.amazonaws.com/i_win.mp4">Dubs only</Link>
+        </li>
+        <li>
+          <Link href="https://www.youtube.com/watch?v=mRDLlziWg-0">Maybe the best duet ever</Link>
+        </li>
+        <li>
+          <Link href="https://www.youtube.com/watch?v=EZp61YacOuI">One of my favorite dance videos</Link>
         </li>
       </ul>
     </section>
