@@ -51,22 +51,22 @@ const IndexPage = () => (
           <Link href="https://www.youtube.com/watch?v=603F7vPUbrg">CD Wind Turbines</Link>
         </li>
         <li>
+          <Link href="https://media-to-share.s3.us-east-2.amazonaws.com/i_win.mp4">Win</Link>
+        </li>
+        <li>
           <Link href="https://www.youtube.com/watch?v=gmHcG-bar7w">Robotic Arm</Link>
+        </li>
+        <li>
+          <Link href="https://www.youtube.com/watch?v=mRDLlziWg-0">Vibraphone</Link>
         </li>
         <li>
           <Link href="https://www.youtube.com/watch?v=nn-x44gB0oA">Wooden Helicopters</Link>
         </li>
         <li>
+          <Link href="https://www.youtube.com/watch?v=EZp61YacOuI">Dance</Link>
+        </li>
+        <li>
           <Link href="https://www.youtube.com/watch?v=fUokpuev6pk">&ldquo;Soft&rdquo; Robotics</Link>
-        </li>
-        <li>
-          <Link href="https://media-to-share.s3.us-east-2.amazonaws.com/i_win.mp4">Dubs only</Link>
-        </li>
-        <li>
-          <Link href="https://www.youtube.com/watch?v=mRDLlziWg-0">Maybe the best duet ever</Link>
-        </li>
-        <li>
-          <Link href="https://www.youtube.com/watch?v=EZp61YacOuI">One of my favorite dance videos</Link>
         </li>
       </ul>
     </section>
